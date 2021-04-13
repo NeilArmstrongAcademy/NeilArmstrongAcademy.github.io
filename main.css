@@ -8,7 +8,7 @@ html,body{
   min-height: 100%;
 }
 .background{
-  position: absolute;
+  position: fixed;
   z-index: 0;
   height: 100%;
   width:100%;
@@ -41,6 +41,7 @@ h2{
   animation-duration: 800ms;
   animation-delay: 900ms;
 }
+
 
 .icon{
   position: absolute;
