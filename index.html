@@ -84,7 +84,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 align-self-center">
-        <iframe src="https://player.twitch.tv/?channel=linkcld14&parent=cdeskins.com&parent=neilarmstrongacademy.cdeskins.com" height="1200px" width="720px"></iframe>
+        <iframe src="http://player.twitch.tv/?channel=linkcld14&parent=cdeskins.com&parent=neilarmstrongacademy.cdeskins.com" height="1200px" width="720px"></iframe>
       </div>
       <div class="col-md-4 align-self-center">
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fneilarmstrongacademy%2F&tabs=timeline&width=340&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="600" style="border:none;overflow:hidden; display:block; margin:10px auto;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>
@@ -100,6 +100,19 @@
         <iframe style="border: 1px solid black;" height="600" width="100%" src="http://www.mystratotrack.com/MapView.aspx?cs=KE7BFU-11&tl=8640"></iframe>
       </div>
     </div>
+    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="twitch_stream"></div>
+    <script type="text/javascript">
+      var options = {
+        width: "100%",
+        height: "100%",
+        channel: "linkcld14",
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com
+        parent: ["neilarmstrongacademy.cdeskins.com", "cdeskins.com"]
+      };
+      var player = new Twitch.Player("twitch_stream", options);
+      player.setVolume(0.5);
+    </script>
   </div>
 </body>
 
